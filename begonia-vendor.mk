@@ -51,6 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/lib/libvcodec_cap.so:system/lib/libvcodec_cap.so \
     vendor/redmi/begonia/proprietary/lib/libvcodec_capenc.so:system/lib/libvcodec_capenc.so \
     vendor/redmi/begonia/proprietary/lib/libvt_avsync.so:system/lib/libvt_avsync.so \
+    vendor/redmi/begonia/proprietary/lib/libem_support_jni.so:system/lib/libem_support_jni.so \
+    vendor/redmi/begonia/proprietary/lib64/libem_support_jni.so:system/lib64/libem_support_jni.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so:system/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
@@ -2299,6 +2301,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
 PRODUCT_PACKAGES += \
+    EngineerMode \
     ImsService \
     SoterService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
