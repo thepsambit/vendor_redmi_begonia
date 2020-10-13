@@ -17,45 +17,138 @@
 soong_namespace {
 }
 
-dex_import {
-    name: "mediatek-common",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-common.jar"],
+android_app_import {
+	name: "EngineerMode",
+	owner: "redmi",
+	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ImsService",
+	owner: "redmi",
+	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "SoterService",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleCORTEXM4",
+	owner: "redmi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleCORTEXM4",
+	owner: "redmi",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 dex_import {
-    name: "mediatek-framework",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-framework.jar"],
+	name: "mediatek-common",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-common.jar"],
 }
 
 dex_import {
-    name: "mediatek-ims-base",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-ims-base.jar"],
+	name: "mediatek-framework",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-framework.jar"],
 }
 
 dex_import {
-    name: "mediatek-ims-common",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-ims-common.jar"],
+	name: "mediatek-ims-base",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-ims-base.jar"],
 }
 
 dex_import {
-    name: "mediatek-telecom-common",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+	name: "mediatek-ims-common",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-ims-common.jar"],
 }
 
 dex_import {
-    name: "mediatek-telephony-base",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+	name: "mediatek-telecom-common",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
 }
 
 dex_import {
-    name: "mediatek-telephony-common",
-    owner: "redmi",
-    jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+	name: "mediatek-telephony-base",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.misys-V1.0-java",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.misys-V2.0-java",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.misys.V3_0",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys.V3_0.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.mtdservice-V1.0-java",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.mtdservice-V1.1-java",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar"],
+}
+
+dex_import {
+	name: "vendor.xiaomi.hardware.vsimapp-V1.0-java",
+	owner: "redmi",
+	jars: ["proprietary/framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar"],
 }
 
